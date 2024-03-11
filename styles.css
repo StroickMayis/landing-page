@@ -1,5 +1,200 @@
+/* GLOBAL SELECTORS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+p {
+    font-size: large;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+h4 {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* MAJOR CONTAINERS */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #1F2937;
+    color: white;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1F2937;
+    color: white;
+}
+
+/* MAJOR SUBCONTAINERS */
+
+.card {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    flex-wrap: wrap;
+}
+
+    /* MAJOR SUBCONTAINER SPECIFIC SELECTIONS */
+
+        /* ADDS GAP & FLEX TO HEADER LINKS */
+    .header .right {
+        display: flex;
+        gap: 20px;
+
+    }
+
+        /* ADDS COLORS TO 1st CARD */
+    .card.one {
+        background-color: #1F2937;
+        color: white;
+    }
+        /* CHANGES FLEX DIRECTION OF 2nd CARD */
+    .card.two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* MINOR CONTAINERS */
+
+/* .subCard is the main minor container I am using, but I am usually selecting it with more specificity. */
+
+    /* MINOR CONTAINER SPECIFIC SELECTIONS */
+
+        /* SETS SIZE, GROW & MARGIN FOR CARD 1's DOUBLE SUBCARDS */
+    .card.one .subCard {
+        flex: 0 1 600px;
+        margin: 20px;
+    }
+        /* SETS SIZE, GROW & MARGIN FOR CARD 1's DOUBLE SUBCARDS */
+    .card.two .subCard {
+        margin: 20px;
+    }
+        /* PUSHES DOWN SIGN UP BUTTON ON UPPERMOST CARD */
+    .card.one .subCard .signUp {
+        margin-top: 36px;
+    } 
+        /* STYLING FOR BLUE SIGN UP BUTTON */
+    .subCard a {
+        padding: 12px 36px;
+        background-color: #3882F6 ;
+        border-radius: 8px;
+    }
+
+        /* MOVES DNA IMAGE TO RIGHT */
+    .subCard.img {
+        display: flex; 
+        justify-content: end;
+    }
+        /* SETS DNA IMAGE SIZE & FLEX PROPS */
+    .subCard.img img{
+        max-width: 600px;
+        flex: 0 1 auto;
+    }
+
+        /* STYLES BLUE BOXES UNDER CARD TWO */
+    .boxImg {
+        border: 3px solid #3882F6;
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        flex: 0 0 auto;
+        margin-bottom: 8px;
+    }
+        /* THE 4 CARDS UNDER "SOME RANDOM INFORMATION" */
+    .subSubCard {
+        max-width: 150px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 20px;
+    }
+        /* MAKES THE $ PHOTO CARDS GO HORIZONTALLY */
+    .card.two .subCard {
+        display: flex;
+        flex-direction: row;
+    }
+        /* GAPS THE $ PHOTO CARDS  */
+    .card.two {
+        padding-top: 32px;
+    }
+        /* SET GREY BACKGROUND COLOR ON CARD THREE */
+    .card.three {
+        background-color: #E5E7EB;
+    }
+        /* ADDS FLEX TO QUOTE ON CARD THREE */
+    .quote {
+        flex: 0 1 auto;
+    }
+        /* PUTS THE QUOTE REFERENCE ON THE RIGHT */
+    .quoteRef {
+        text-align: end;
+    }
+        /* CONFORMS THE QUOTE BOX */
+    .conformer {
+        flex: 0 1 700px ;
+        flex-direction: column;
+    }
+        /* STYLES THE CALL TO ACTION BOX */
+    .ctaBox {
+        background-color: #3882F6;
+        color: white;
+        padding: 40px 120px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        row-gap: 20px;
+    }
+        /* STYLES CALL TO ACTION BOX BUTTON FOR SIGN UP */
+    .ctaBox a {
+        border: 2px solid white;
+        padding: 8px 32px;
+        border-radius: 8px;
+        flex: 0 0 auto;
+    }
+
