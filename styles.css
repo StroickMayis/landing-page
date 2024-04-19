@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
+    background-color: rgb(30, 30, 40);
 }
 
 p {
@@ -28,13 +30,13 @@ h3 {
 }
 
 h4 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 100;
     font-style: italic;
 }
 
 h5 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h6 {
@@ -48,7 +50,7 @@ h6 {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #1F2937;
+    background-color: rgb(50,50,60);
     color: white;
     align-items: center;
 }
@@ -65,7 +67,7 @@ h6 {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #1F2937;
+    background-color: rgb(20, 20, 30);
     color: white;
 }
 
@@ -89,7 +91,8 @@ h6 {
 
         /* ADDS COLORS TO 1st CARD */
     .card.one {
-        background-color: #1F2937;
+        padding: 40px;
+        background-color: rgb(40, 40, 50);
         color: white;
     }
         /* CHANGES FLEX DIRECTION OF 2nd CARD */
@@ -113,36 +116,48 @@ h6 {
     .card.two .subCard {
         margin: 20px;
     }
-        /* PUSHES DOWN SIGN UP BUTTON ON UPPERMOST CARD */
-    .card.one .subCard .signUp {
-        margin-top: 36px;
-    } 
         /* STYLING FOR BLUE SIGN UP BUTTON */
     .subCard a {
         padding: 12px 36px;
-        background-color: #3882F6 ;
+        background-color: rgb(30, 30, 40) ;
         border-radius: 8px;
     }
 
-        /* MOVES DNA IMAGE TO RIGHT */
+        /* MOVES IMAGE TO RIGHT */
     .subCard.img {
         display: flex; 
         justify-content: end;
     }
-        /* SETS DNA IMAGE SIZE & FLEX PROPS */
+        /* SETS IMAGE SIZE & FLEX PROPS */
     .subCard.img img{
-        max-width: 600px;
+        max-width: 500px;
         flex: 0 1 auto;
     }
-
         /* STYLES BLUE BOXES UNDER CARD TWO */
     .boxImg {
-        border: 3px solid #3882F6;
+        border: 2px solid rgb(90, 90, 100);
         width: 150px;
         height: 150px;
         border-radius: 15px;
         flex: 0 0 auto;
         margin-bottom: 8px;
+        background-position: center;
+        background-size: contain;
+    }
+    .boxImg:hover {
+        box-shadow: 0 0 1.5dvh .2dvh black;
+    }
+    .boxImg.one {
+        background-image: url("images/rockPaperScissors.png");
+    }
+    .boxImg.two {
+        background-image: url("images/etchASketch.png");
+    }
+    .boxImg.three {
+        background-image: url("images/calculator.png");
+    }
+    .boxImg.four {
+        background-image: url("images/recipes.png");
     }
         /* THE 4 CARDS UNDER "SOME RANDOM INFORMATION" */
     .subSubCard {
@@ -151,6 +166,7 @@ h6 {
         flex-direction: column;
         text-align: center;
         margin: 0 20px;
+        font-size: large;
     }
         /* MAKES THE $ PHOTO CARDS GO HORIZONTALLY */
     .card.two .subCard {
@@ -163,7 +179,8 @@ h6 {
     }
         /* SET GREY BACKGROUND COLOR ON CARD THREE */
     .card.three {
-        background-color: #E5E7EB;
+        background-color: rgb(60, 60, 70);
+        border-radius: 8px;
     }
         /* ADDS FLEX TO QUOTE ON CARD THREE */
     .quote {
@@ -180,7 +197,7 @@ h6 {
     }
         /* STYLES THE CALL TO ACTION BOX */
     .ctaBox {
-        background-color: #3882F6;
+        background-color: rgb(50, 50, 60);
         color: white;
         padding: 40px 120px;
         border-radius: 8px;
@@ -197,4 +214,10 @@ h6 {
         border-radius: 8px;
         flex: 0 0 auto;
     }
+
+    .italicSpan {
+        font-style: italic;
+    }
+
+
 
