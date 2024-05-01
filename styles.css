@@ -159,6 +159,9 @@ h6 {
     .boxImg.four {
         background-image: url("images/recipes.png");
     }
+    .boxImg.five {
+        background-image: url("images/ttrpgManager.png");
+    }
         /* THE 4 CARDS UNDER "SOME RANDOM INFORMATION" */
     .subSubCard {
         max-width: 150px;
